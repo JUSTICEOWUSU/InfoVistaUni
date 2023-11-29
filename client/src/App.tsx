@@ -1,11 +1,15 @@
-import './App.css'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import {Route,Routes,BrowserRouter as Router} from 'react-router-dom'
+import HomePage from './pages/homePage/homePage';
 function App() {
-
   return (
     <Router>
       <Routes>
-        <Route index element={  <h1>hello new gis app</h1>}/>
+        <Route
+          index
+          element={
+            <HomePage/>
+          }
+        />
       </Routes>
     </Router>
   );
